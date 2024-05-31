@@ -2,11 +2,12 @@
 """_summary_
 this file to write any business logic for the Market
 """
+import os
 import requests
 
 from resources.market.market_schema import MarketData
 
-API_KEY = "<YOUR_API_KEY>"
+API_KEY = os.environ.get("TWELEVDATA_API_KEY")
 BASE_URL = "https://api.twelvedata.com/price"
 
 def get_market_data():
