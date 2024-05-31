@@ -1,5 +1,5 @@
 # Instructions from Candidate
-This repo contains 3 phases, each phase with its own git repo. added them all here for easier access,  visibility, and organization in my opinion. You can find feedback about each phase in the corresponding README file.
+This repo contains 3 phases. added them all here for easier access,  visibility, and organization in my opinion. You can find feedback about each phase in the corresponding README file.
 
 ---
 # Investor Bulletin Project
