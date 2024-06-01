@@ -6,7 +6,6 @@ from sqlalchemy.orm import Session
 from resources.alerts.alert_schema import AlertCreate
 from resources.alerts.alert_dal import create_rule, get_alerts_from_db
 
-# not used
 def create_new_alert(rule: AlertCreate, session: Session):
     return create_rule(rule=rule, session=session)
 
