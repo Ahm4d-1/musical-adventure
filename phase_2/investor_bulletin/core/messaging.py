@@ -11,7 +11,7 @@ event = {
     "type": "THRESHOLD_ALERT",
     "message": "Threshold exceeded",
     "name": "Price Drop Alert for AAPL (from event)",
-    "threshold_price": 150.00,
+    "threshold_price": 170.00,
     "symbol": "AAPL"
 }
 
@@ -23,13 +23,13 @@ def publish_event(event, host, username, password):
             channel = broker.channel()
 
             # Declare the exchange if it doesn't exist
-            channel.exchange.declare(exchange='events', exchange_type='direct', durable=True)
+            channel.exchange.declare(exchange='events', exchange_type='topic', durable=True)
 
             # Create a persistent message
             message = Message.create(channel, json.dumps(event), properties={'delivery_mode': 2})
 
             # Publish the message
-            message.publish(routing_key='events', exchange='events')
+            message.publish(routing_key='alert.threshold', exchange='events')
 
             # Close the channel
             channel.close()

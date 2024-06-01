@@ -34,11 +34,14 @@ def consume_events(host, username, password, queue_name):
     # Open a channel
     channel = connection.channel()
 
+    # Declare the exchange to ensure it exists
+    channel.exchange_declare(exchange='events', exchange_type='topic', durable=True)
+
     # Declare the queue (it should match the queue to which events are published)
     channel.queue_declare(queue=queue_name, durable=True)
 
-    # Bind the queue to the exchange (if necessary)
-    channel.queue_bind(exchange='events', queue=queue_name, routing_key='events')
+    # Bind the queue to the exchange with a routing key pattern
+    channel.queue_bind(exchange='events', queue=queue_name, routing_key='alert.*')
 
     # Set up subscription on the queue
     channel.basic_consume(queue=queue_name, on_message_callback=callback, auto_ack=True)
