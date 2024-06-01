@@ -1,3 +1,7 @@
+## Candidate Phase 3 Feedback
+- straightforward, had a small problem to execute the celery using python shell to test the task.
+- had to update couple files from previous phases for better code quality.
+
 # PHASE THREE (Background tasks)
 
 ![phase_three](../imgs/phase-three.jpg)
