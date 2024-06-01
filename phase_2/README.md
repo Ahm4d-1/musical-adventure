@@ -1,3 +1,8 @@
+## Candidate Phase 2 Feedback
+
+- most challenging: I noticed in the tasks the publisher will publish an event and THEN we would run the consumer, took me some time to make the messages persistent.
+- I like how tasks are divided, clear objective for each phase.
+
 # PHASE TWO (Creating publisher/Subscriber)
 
 ![phase_two](../imgs/phase-two.jpg)
@@ -21,22 +26,22 @@ to be able to publish `THRESHOLD_ALERT` event through a message queue and consum
 
 ## TASKS Breakdown
 
-- [ ] **Copy all your work in phase one**
+- [x] **Copy all your work in phase one**
 --
-- [ ] **Set up your environment**
+- [x] **Set up your environment**
  Whether on your machine or using docker, make sure you have a running rabbitmq broker
 --
-- [ ] **Get to know Rabbitmq and Configure the queues**
+- [x] **Get to know Rabbitmq and Configure the queues**
 --
-- [ ] **Create a publisher connection using amqpstorm inside the core/messaging.py file**
+- [x] **Create a publisher connection using amqpstorm inside the core/messaging.py file**
 --
-- [ ] **Publish a `THRESHOLD_ALERT` event by running the core/messaging.py file**
+- [x] **Publish a `THRESHOLD_ALERT` event by running the core/messaging.py file**
 --
-- [ ] **Create a consumer connection using pika inside the event_subscriber/main.py**
+- [x] **Create a consumer connection using pika inside the event_subscriber/main.py**
 --
-- [ ] **Consumed the published event and print the message by running the the event_subscriber/main.py**
+- [x] **Consume the published event and print the message by running the the event_subscriber/main.py**
 --
-- [ ] **Create an event record by using the alert_service.py**
+- [x] **Create an event record by using the alert_service.py**
 
 ## What's next
 
