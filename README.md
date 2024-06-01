@@ -1,7 +1,25 @@
-# Instructions from Candidate
-This repo contains 3 phases. added them all here for easier access,  visibility, and organization in my opinion. You can find feedback about each phase in the corresponding README file.
+# Instructions from Candidate (Ahmad Alturki)
+This repo contains 3 phases. added them all here for easier access,  visibility, and organization in my opinion.
+
+You can find feedback about each phase in the corresponding README file.
+
+It is reasonable to only test PHASE_3 since it includes all previous phases as well.
+
+- [Phase One - Getting to know FastAPI](./phase_1/README.md)
+- [Phase Two - Creating Publisher and Subscriber](./phase_2/README.md)
+- [Phase Three - Background tasks](./phase_3/README.md)
+
+## Overall Candidate feedback
+- All 3 phases took me a total of around 4 to 5 hours to complete all tasks. which is a real commitment, I think only someone who is really interested in working with Malaa would commit to finishing this project.
+
+- I was not able to start working on the project during the week, had very limited time, so I spent the weekend doing it.
+
+- I think the project gives a slight view on how engineering is at the company, how focused on code quality, correct patterns and principles the team is. It comforts the candidate somewhat as well, everyone wants to work with great people who they could level up with.
+
+- This project is focused on clear objectives, things like tests and authentication are important for real-world projects but are not relevant here.
 
 ---
+
 # Investor Bulletin Project
 
 ![Welcome](./imgs/hello-welcome.gif)
