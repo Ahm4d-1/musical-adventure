@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "*"
+uvicorn = "*"
+requests = "*"
+sqlalchemy = "*"
+sqlalchemy-cockroachdb = "*"
+psycopg2-binary = "*"
+pika = "*"
+amqpstorm = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"

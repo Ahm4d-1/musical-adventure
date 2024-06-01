@@ -21,7 +21,7 @@ to be able to fetch the market data periodically every hour and check if any of 
 
 ## TASKS Breakdown
 
-- [ ] **Copy all your work in phase two**
+- [x] **Copy all your work in phase two**
 --
 - [ ] **Configure Celery app**
 --
