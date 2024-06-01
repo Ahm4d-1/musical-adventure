@@ -1,3 +1,9 @@
+## Candidate (Ahmad Alturki) Phase 1 Feedback
+
+- main thing: new to investment world, didn't know alerts and alert-rules relationship which took some time.
+- had little time to do this so I didn't do tests or authentication.
+- had fun with how beautifully the code is organized and how to keep its beauty while extending the system.
+
 # PHASE ONE (Getting to know FastAPI)
 
 ![phase_one](../imgs/phase-one.jpg)
@@ -82,10 +88,3 @@ alerts should have the following properties `name, threshold price, symbol`
 --
 
 - **If you stuck, or it took so long*- it ok, we understand just send an email with the a link of your work in your github, tell us more about your comfort level out of 5 and how much did you actually completed from the task out of 7, where are you stuck or what took the most of your time
-
-
-### Candidate (Ahmad Alturki) Feedback After Phase 1
-
-- main thing: new to investment world, didn't know alerts and alert-rules relationship which took some time.
-- had little time to do this so I didn't do tests or authentication.
-- had fun with how beautifully the code is organized and how to keep its beauty while extending the system.
