@@ -23,13 +23,13 @@ to be able to fetch the market data periodically every hour and check if any of 
 
 - [x] **Copy all your work in phase two**
 --
-- [ ] **Configure Celery app**
+- [x] **Configure Celery app**
 --
-- [ ] **Create a celery task that use the market_service.py to fetch the market data and use the rules_service.py to get all the users rules**
+- [x] **Create a celery task that use the market_service.py to fetch the market data and use the rules_service.py to get all the users rules**
 --
-- [ ] **Inside the celery publish `THRESHOLD_ALERT` event if there is a threshold crossover**
+- [x] **Inside the celery publish `THRESHOLD_ALERT` event if there is a threshold crossover**
 --
-- [ ] **Run the celery worker and make sure everything is working and the subscriber from phase two managed to consume the event**
+- [x] **Run the celery worker and make sure everything is working and the subscriber from phase two managed to consume the event**
 --
 - [ ] **create a celery beat that runs the task every 5 min**
 

@@ -21,7 +21,10 @@ def get_alert_rule_by_id(rule_id: int, session: Session):
     return session.query(Rule).filter(Rule.id == rule_id).first()
 
 def get_alert_rules(skip: int = 0, limit: int = 10, session: Session = None):
-    return session.query(Rule).offset(skip).limit(limit).all()
+    query = session.query(Rule).offset(skip)
+    if limit != 0:
+        query = query.limit(limit)
+    return query.all()
 
 def update_alert_rule(rule_id: int, rule: AlertRuleUpdate, session: Session):
     db_rule = get_alert_rule_by_id(rule_id, session)

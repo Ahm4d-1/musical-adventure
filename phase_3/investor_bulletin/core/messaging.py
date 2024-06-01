@@ -6,16 +6,8 @@ host = 'localhost'
 username = 'guest'
 password = 'guest'
 
-# Event details
-event = {
-    "type": "THRESHOLD_ALERT",
-    "message": "Threshold exceeded",
-    "name": "Price Drop Alert for AAPL (from event)",
-    "threshold_price": 170.00,
-    "symbol": "AAPL"
-}
 
-def publish_event(event, host, username, password):
+def publish_event(event):
     try:
         # Create a connection object to publish events
         with Connection(host, username, password) as broker:
@@ -40,4 +32,12 @@ def publish_event(event, host, username, password):
         print(f"An error occurred: {e}")
 
 if __name__ == "__main__":
-    publish_event(event, host, username, password)
+
+    event = {
+        "type": "THRESHOLD_ALERT",
+        "message": "Threshold exceeded",
+        "name": "Price Drop Alert for AAPL (test event)",
+        "threshold_price": 170.00,
+        "symbol": "AAPL"
+    }
+    publish_event(event)
