@@ -12,6 +12,7 @@ sqlalchemy-cockroachdb = "*"
 psycopg2-binary = "*"
 pika = "*"
 amqpstorm = "*"
+celery = "*"
 
 [dev-packages]
 
