@@ -4,6 +4,13 @@
 - had little time to do this so I didn't do tests or authentication.
 - had fun with how beautifully the code is organized and how to keep its beauty while extending the system.
 
+## Setup
+- make sure required services are running `make up`
+- go to phase_1 directory `cd phase_1`
+- open a pipenv shell `pipenv install`
+- open a terminal and update pythonpath `export PYTHONPATH="$(pwd)/investor_bulletin"`
+- run the webserver `fastapi dev investor_bulletin/api/main.py`
+
 # PHASE ONE (Getting to know FastAPI)
 
 ![phase_one](../imgs/phase-one.jpg)

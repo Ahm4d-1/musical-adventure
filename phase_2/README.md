@@ -3,6 +3,15 @@
 - most challenging: I noticed in the tasks the publisher will publish an event and THEN we would run the consumer, took me some time to make the messages persistent.
 - I like how tasks are divided, clear objective for each phase.
 
+## Setup
+- make sure required services are running `make up`
+- go to phase_2 directory `cd phase_2`
+- open a pipenv shell `pipenv install`
+- open a terminal and update pythonpath `export PYTHONPATH="$(pwd)/investor_bulletin"`
+- run the publisher `python3 investor_bulletin/core/messaging.py`
+- run the consumer `python3 investor_bulletin/event_subscriber/main.py`
+
+
 # PHASE TWO (Creating publisher/Subscriber)
 
 ![phase_two](../imgs/phase-two.jpg)

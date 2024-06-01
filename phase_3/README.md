@@ -3,6 +3,17 @@
 - straightforward, had a small problem to execute the celery using python shell to test the task.
 - had to update couple files from previous phases for better code quality.
 
+## Setup
+- make sure required services are running `make up`
+- go to phase_3 directory `cd phase_3`
+- open a pipenv shell `pipenv install`
+- open a terminal and update pythonpath `export PYTHONPATH="$(pwd)/investor_bulletin"`
+- move to celery worker dir `cd investor_bulletin/worker`
+- run the celery worker `celery -A app worker --loglevel=INFO`
+- open a new terminal window
+- move to celery worker dir `cd investor_bulletin/worker`
+- run the celery worker `celery -A app beat --loglevel=INFO`
+
 # PHASE THREE (Background tasks)
 
 ![phase_three](../imgs/phase-three.jpg)
