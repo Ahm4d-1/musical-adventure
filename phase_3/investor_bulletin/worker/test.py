@@ -1,0 +1,2 @@
+from app import check_market_data_and_rules
+check_market_data_and_rules.delay()
