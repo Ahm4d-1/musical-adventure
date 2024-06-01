@@ -10,6 +10,8 @@ requests = "*"
 sqlalchemy = "*"
 sqlalchemy-cockroachdb = "*"
 psycopg2-binary = "*"
+pika = "*"
+amqpstorm = "*"
 
 [dev-packages]
 
