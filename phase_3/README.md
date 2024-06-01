@@ -31,7 +31,7 @@ to be able to fetch the market data periodically every hour and check if any of 
 --
 - [x] **Run the celery worker and make sure everything is working and the subscriber from phase two managed to consume the event**
 --
-- [ ] **create a celery beat that runs the task every 5 min**
+- [x] **create a celery beat that runs the task every 5 min**
 
 ## What's next
 

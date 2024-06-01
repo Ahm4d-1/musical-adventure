@@ -1,4 +1,5 @@
 from celery import Celery
+from celery.schedules import crontab
 
 from core.messaging import publish_event
 from db.models.model_base import get_db
@@ -6,11 +7,21 @@ from resources.alert_rules.alert_rule_service import get_rules
 from resources.market.market_service import get_market_data
 
 def create_celery_app():
-    return Celery('tasks', broker='pyamqp://guest@localhost//')
+    app = Celery('tasks', broker='pyamqp://guest@localhost//')
+    app.conf.update(
+        beat_schedule={
+            'check-market-data-every-5-minutes': {
+                'task': 'tasks.check_market_data_and_rules',
+                'schedule': crontab(minute='*/5'),
+            },
+        },
+    timezone='UTC',
+    ),
+    return app
 
 celery_app = create_celery_app()
 
-@celery_app.task
+@celery_app.task(name='tasks.check_market_data_and_rules')
 def check_market_data_and_rules():
 
     # Fetch the latest market data
