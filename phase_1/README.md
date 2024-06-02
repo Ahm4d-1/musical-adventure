@@ -11,6 +11,9 @@
 - open a terminal and update pythonpath `export PYTHONPATH="$(pwd)/investor_bulletin"`
 - run the webserver `fastapi dev investor_bulletin/api/main.py`
 
+## Explanation
+The solution uses multiple layers of abstraction to deal with the system, which is great for extending large systems and easier to maintain. However, the main tradeoff is that it has more boilerplate code in many cases.
+
 # PHASE ONE (Getting to know FastAPI)
 
 ![phase_one](../imgs/phase-one.jpg)

@@ -11,22 +11,8 @@
 - run the publisher `python3 investor_bulletin/core/messaging.py`
 - run the consumer `python3 investor_bulletin/event_subscriber/main.py`
 
-
-# PHASE TWO (Creating publisher/Subscriber)
-
-![phase_two](../imgs/phase-two.jpg)
-
-## Technology used
-
-> 📢📢📢 please use `Topic Exchange` as your message routing agents [for more info](https://www.cloudamqp.com/blog/part4-rabbitmq-for-beginners-exchanges-routing-keys-bindings.html)
-
-- Publisher - [amqpstorm](https://www.amqpstorm.io/examples/simple_publisher.html)
-- Subscriber - [Pika](https://pika.readthedocs.io/en/stable/intro.html)
-- Broker [RabbitMQ](https://www.rabbitmq.com/tutorials/tutorial-one-python.html)
-
-## Objectives
-
-to be able to publish `THRESHOLD_ALERT` event through a message queue and consume it thought a subscriber to that queue and print the result of that event and create a new alert record
+## Explanation
+Phase two introduces asynchronous messaging, which offers benefits such as improved scalability and fault tolerance. However, it also adds complexity compared to synchronous communication. Consider the tradeoffs and evaluate whether the benefits outweigh the added complexity.
 
 ## Functionality
 

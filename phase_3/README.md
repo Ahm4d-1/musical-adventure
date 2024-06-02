@@ -14,6 +14,9 @@
 - move to celery worker dir `cd investor_bulletin/worker`
 - run the celery worker `celery -A app beat --loglevel=INFO`
 
+## Explanation
+This phase combines previous phases into a full application with background tasks and a scheduler. It improves efficiency, scalability, and reliability while providing real-time updates. However, it adds complexity, resource consumption, and potential concurrency issues.
+
 # PHASE THREE (Background tasks)
 
 ![phase_three](../imgs/phase-three.jpg)
